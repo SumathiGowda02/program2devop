@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#selectableImage {
+    border: 5px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#selectableImage.selected {
+    border-color: #28a745;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
